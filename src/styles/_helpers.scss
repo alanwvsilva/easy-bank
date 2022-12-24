@@ -1,0 +1,14 @@
+// Helpers
+.transitions {
+  transition: all 0.15s ease-in-out;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.gradient-green {
+  background: #76b852;
+  background: -webkit-linear-gradient(to right, #8dc26f, #76b852);
+  background: linear-gradient(to right, #8dc26f, #76b852);
+}

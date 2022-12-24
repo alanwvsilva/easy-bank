@@ -1,0 +1,23 @@
+@import '../../styles/app.scss';
+
+// Product
+.product {
+  padding: 3rem 0;
+
+  .row {
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  &__desc {
+    margin-bottom: 2rem;
+  }
+}
+.product--bg-green {
+  @extend .gradient-green;
+
+  color: white;
+}

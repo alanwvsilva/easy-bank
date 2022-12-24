@@ -1,0 +1,120 @@
+@import '../../styles/app.scss';
+
+// Header
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.quick-links {
+  background-color: $dark-green;
+
+  .col {
+    padding: 0;
+  }
+
+  .useful,
+  .features {
+    &__link {
+      font-size: 0.875rem;
+      color: $lemon;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+      &:hover {
+        color: white;
+      }
+    }
+  }
+  .features {
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    &__icon {
+      font-size: 1rem;
+    }
+    &__link--bell {
+      position: relative;
+
+      &::before {
+        content: '';
+        width: 0.25rem;
+        height: 0.25rem;
+        border-radius: 50%;
+        background-color: $yellow;
+        position: absolute;
+        top: 0.5rem;
+        right: 0;
+      }
+    }
+  }
+}
+.main-navigation {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid white;
+  @extend .gradient-green;
+
+  &__stack {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  &__brand {
+    display: block;
+    margin: 0;
+    font-weight: 700;
+    color: white !important;
+
+    .logo-icon {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__products,
+  &__actions {
+    gap: 0.5rem;
+  }
+
+  &__actions {
+    justify-content: end;
+  }
+
+  &__link {
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+
+    &:hover {
+      color: white;
+      background-color: $dark-green !important;
+    }
+  }
+
+  .actions {
+    &__link--hglt {
+      border-radius: 10px;
+      background-color: rgba($dark-green, 0.5);
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    &__icon {
+      color: $yellow;
+    }
+  }
+}

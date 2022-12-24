@@ -1,0 +1,26 @@
+// Imports
+@import './variables';
+@import './helpers';
+@import './buttons';
+
+// Overall
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: $grey;
+
+  a {
+    color: $grey;
+    @extend .transitions;
+
+    &:hover {
+      color: $grey-50;
+    }
+  }
+
+  ul {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
