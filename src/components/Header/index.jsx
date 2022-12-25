@@ -20,7 +20,7 @@ function Header() {
       <div className="quick-links">
         <Container>
           <Row>
-            <Col>
+            <Col xs={12} md="auto">
               <Nav className="quick-links__useful useful">
                 <Nav.Link href="#" className="useful__link">
                   Lorem
@@ -42,18 +42,18 @@ function Header() {
                 </Nav.Link>
               </Nav>
             </Col>
-            <Col>
-              <Nav className="quick-links__features features">
-                <Nav.Link href="#" className="features__link">
-                  <FaStream className="features__icon"></FaStream>
+            <Col xs={12} md>
+              <Nav className="quick-links__featured featured">
+                <Nav.Link href="#" className="featured__link">
+                  <FaStream className="featured__icon"></FaStream>
                   <span>Extract</span>
                 </Nav.Link>
-                <Nav.Link href="#" className="features__link">
-                  <FaWallet className="features__icon"></FaWallet>
+                <Nav.Link href="#" className="featured__link">
+                  <FaWallet className="featured__icon"></FaWallet>
                   <span>Wallet</span>
                 </Nav.Link>
-                <Nav.Link href="#" className="features__link features__link--bell">
-                  <FaBell className="features__icon"></FaBell>
+                <Nav.Link href="#" className="featured__link featured__link--bell">
+                  <FaBell className="featured__icon"></FaBell>
                 </Nav.Link>
               </Nav>
             </Col>
@@ -61,54 +61,50 @@ function Header() {
         </Container>
       </div>
       <div className="main-navigation">
-        <Container>
-          <Row>
-            <Navbar expand="lg">
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="basic-navbar-nav">
-                <Col xs={12} md={8}>
-                  <div className="main-navigation__stack">
-                    <Navbar.Brand href="#home" className="main-navigation__brand">
-                      <img src={logoYellow} className="logo-icon" width={64} height={64} alt="Easy Bank" />
-                      <span>Easy BANK</span>
-                    </Navbar.Brand>
-                    <Nav className="main-navigation__products">
-                      <Nav.Link href="#home" className="main-navigation__link">
-                        Accounts
-                      </Nav.Link>
-                      <Nav.Link href="#link" className="main-navigation__link">
-                        Products
-                      </Nav.Link>
-                      <Nav.Link href="#link" className="main-navigation__link">
-                        Crypto
-                      </Nav.Link>
-                      <Nav.Link href="#link" className="main-navigation__link">
-                        Credit
-                      </Nav.Link>
-                      <Nav.Link href="#link" className="main-navigation__link">
-                        Contacts
-                      </Nav.Link>
-                    </Nav>
-                  </div>
-                </Col>
-                <Col xs={12} md={4}>
-                  <Nav className="main-navigation__actions actions">
-                    <Nav.Link href="#home" className="main-navigation__link actions__link actions__link--hglt">
-                      <FaUserAlt className="actions__icon"></FaUserAlt>
-                      Login
-                    </Nav.Link>
-                    <Nav.Link href="#link" className="main-navigation__link actions__link actions__link--hglt">
-                      <FaCheck className="actions__icon"></FaCheck>
-                      Open Account
-                    </Nav.Link>
-                  </Nav>
-                </Col>
-
-                <Col xs={12} md={4}></Col>
+        <Navbar expand="md">
+          <Container>
+            <div className="main-navigation__stack">
+              <div className="main-navigation__slim">
+                <Navbar.Brand href="#" className="main-navigation__brand brand">
+                  <img src={logoYellow} className="brand__icon" width={64} height={64} alt="Easy Bank" />
+                  <span>Easy BANK</span>
+                </Navbar.Brand>
+                <div className="main-navigation__mobile mobile">
+                  <Navbar.Toggle aria-controls="basic-navbar-nav" className="button-toggler mobile__toggler" />
+                </div>
+              </div>
+              <Navbar.Collapse className="main-navigation__collapse" id="basic-navbar-nav">
+                <Nav className="main-navigation__products">
+                  <Nav.Link href="#" className="main-navigation__link">
+                    Accounts
+                  </Nav.Link>
+                  <Nav.Link href="#" className="main-navigation__link">
+                    Products
+                  </Nav.Link>
+                  <Nav.Link href="#" className="main-navigation__link">
+                    Crypto
+                  </Nav.Link>
+                  <Nav.Link href="#" className="main-navigation__link">
+                    Credit
+                  </Nav.Link>
+                  <Nav.Link href="#" className="main-navigation__link">
+                    Contacts
+                  </Nav.Link>
+                </Nav>
               </Navbar.Collapse>
-            </Navbar>
-          </Row>
-        </Container>
+              <Nav className="main-navigation__actions actions">
+                <Nav.Link href="#home" className="main-navigation__link actions__link actions__link--hglt">
+                  <FaUserAlt className="actions__icon"></FaUserAlt>
+                  Login
+                </Nav.Link>
+                <Nav.Link href="#link" className="main-navigation__link actions__link actions__link--hglt">
+                  <FaCheck className="actions__icon"></FaCheck>
+                  Open Account
+                </Nav.Link>
+              </Nav>
+            </div>
+          </Container>
+        </Navbar>
       </div>
     </header>
   )

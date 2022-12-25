@@ -2,10 +2,13 @@
 
 // Header
 header {
-  position: sticky;
-  top: 0;
-  z-index: 999;
+  @media (min-width: 768px) {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
 }
+
 .quick-links {
   background-color: $dark-green;
 
@@ -14,7 +17,7 @@ header {
   }
 
   .useful,
-  .features {
+  .featured {
     &__link {
       font-size: 0.875rem;
       color: $lemon;
@@ -35,7 +38,8 @@ header {
       }
     }
   }
-  .features {
+
+  .featured {
     text-align: center;
     display: flex;
     justify-content: end;
@@ -59,25 +63,45 @@ header {
       }
     }
   }
+
+  @media (max-width: 767.98px) {
+    .useful {
+      display: none;
+    }
+    .featured {
+      justify-content: center;
+      gap: 1rem;
+    }
+  }
 }
+
 .main-navigation {
   margin-bottom: 2rem;
   border-bottom: 1px solid white;
+  padding: 1rem 0;
   @extend .gradient-green;
 
-  &__stack {
-    display: flex;
+  .row {
     align-items: center;
-    gap: 3rem;
   }
 
-  &__brand {
+  &__stack {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 3rem;
+    row-gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  &__brand.brand {
     display: block;
     margin: 0;
     font-weight: 700;
     color: white !important;
 
-    .logo-icon {
+    .brand__icon {
       margin-right: 0.5rem;
     }
   }
@@ -88,13 +112,16 @@ header {
   }
 
   &__actions {
+    flex-shrink: 0;
     justify-content: end;
+    margin-left: auto;
   }
 
   &__link {
     color: white;
     font-weight: 700;
     border-radius: 10px;
+    padding: 0.5rem;
 
     &:hover {
       color: white;
@@ -115,6 +142,48 @@ header {
 
     &__icon {
       color: $yellow;
+    }
+  }
+
+  @media (min-width: 576px) {
+    &__collapse {
+      flex-grow: 0;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    &__stack {
+      gap: 0;
+    }
+
+    &__slim {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid white;
+    }
+
+    &__collapse {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    &__actions {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    &__actions.actions {
+      flex-direction: row;
+
+      .actions__link--hglt {
+        width: 100%;
+      }
     }
   }
 }
