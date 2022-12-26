@@ -14,15 +14,17 @@ function Hero() {
     <div className="hero">
       <Container>
         <Row>
-          <Col>
-            <img src={heroImage} className="img-fluid" alt="Easy Bank" />
+          <Col xs={12} lg={6}>
+            <div className="hero__img">
+              <img src={heroImage} className="img-fluid" alt="Easy Bank" />
+            </div>
           </Col>
-          <Col>
+          <Col xs={12} lg={6}>
             <div className="hero__wrapper">
               <h1 className="hero__title">Welcome to a new era of digital banking</h1>
               <p className="hero__desc">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati sunt est odit deleniti veritatis dolorem non voluptatibus cum maiores et tempora eaque, corporis doloremque officia
-                qui excepturi{' '}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo veritatis optio, adipisci laudantium fuga, numquam animi et dolore illo laboriosam perferendis, nisi soluta quasi!
+                Corrupti natus ad repellat ipsa similique.{' '}
                 <a href="#" className="text-bold">
                   omnis incidunt ipsa.
                 </a>

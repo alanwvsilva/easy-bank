@@ -29,7 +29,7 @@ function Footer() {
                 </Navbar.Brand>
               </div>
             </Col>
-            <Col>
+            <Col xs={12} md={6} lg>
               <div className="footer__section">
                 <h4 className="footer__title">Accounts</h4>
                 <ul className="footer__list">
@@ -56,7 +56,7 @@ function Footer() {
                 </ul>
               </div>
             </Col>
-            <Col>
+            <Col xs={12} md={6} lg>
               <div className="footer__section">
                 <h4 className="footer__title">Products</h4>
                 <ul className="footer__list">
@@ -83,7 +83,7 @@ function Footer() {
                 </ul>
               </div>
             </Col>
-            <Col>
+            <Col xs={12} md={6} lg>
               <div className="footer__section">
                 <h4 className="footer__title">Crypto</h4>
                 <ul className="footer__list">
@@ -110,7 +110,7 @@ function Footer() {
                 </ul>
               </div>
             </Col>
-            <Col>
+            <Col xs={12} md={6} lg>
               <div className="footer__section">
                 <h4 className="footer__title">Contacts</h4>
                 <ul className="footer__list">
@@ -137,8 +137,8 @@ function Footer() {
                 </ul>
               </div>
             </Col>
-            <Col>
-              <div className="footer__section">
+            <Col xs={12} lg>
+              <div className="footer__section footer__section--last">
                 <div className="app">
                   <div className="app__list">
                     <div className="app__link">

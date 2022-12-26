@@ -26,4 +26,16 @@
   &__smalls {
     font-size: 0.875rem;
   }
+
+  @media (max-width: 991.98px) {
+    text-align: center;
+
+    .row {
+      flex-direction: column-reverse;
+    }
+
+    &__actions {
+      justify-content: center;
+    }
+  }
 }

@@ -2,6 +2,8 @@
 
 // Header
 header {
+  margin-bottom: 2rem;
+
   @media (min-width: 768px) {
     position: sticky;
     top: 0;
@@ -76,7 +78,6 @@ header {
 }
 
 .main-navigation {
-  margin-bottom: 2rem;
   border-bottom: 1px solid white;
   padding: 1rem 0;
   @extend .gradient-green;
@@ -90,7 +91,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 3rem;
+    column-gap: 2rem;
     row-gap: 1rem;
     flex-wrap: wrap;
   }
@@ -113,8 +114,6 @@ header {
 
   &__actions {
     flex-shrink: 0;
-    justify-content: end;
-    margin-left: auto;
   }
 
   &__link {
@@ -184,6 +183,15 @@ header {
       .actions__link--hglt {
         width: 100%;
       }
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    &__stack {
+      justify-content: center;
+    }
+    &__actions {
+      margin: 0 auto;
     }
   }
 }

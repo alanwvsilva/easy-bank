@@ -17,7 +17,7 @@ function Products() {
       <div className="product">
         <Container>
           <Row>
-            <Col xs={12} md={8}>
+            <Col xs={12} lg={8}>
               <h2 className="product__title">Crypto Investments</h2>
               <p className="product__desc">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore earum laboriosam alias commodi, sint, architecto illum, eos et nobis quae quasi eum qui dolor repudiandae hic! Est quo
@@ -29,8 +29,8 @@ function Products() {
                 </a>
               </div>
             </Col>
-            <Col xs={12} md={4}>
-              <img src={productCrypto} alt="Know Easy Crypto" className="product__img img-fluid" />
+            <Col xs={12} lg={4}>
+              <img src={productCrypto} alt="Know Easy Crypto" className="img-fluid product__img" />
             </Col>
           </Row>
         </Container>
@@ -38,10 +38,10 @@ function Products() {
       <div className="product product--bg-green">
         <Container>
           <Row>
-            <Col xs={12} md={4}>
-              <img src={productSecurity} alt="Know Easy Security" className="product__img img-fluid" />
+            <Col xs={12} lg={4}>
+              <img src={productSecurity} alt="Know Easy Security" className="img-fluid product__img" />
             </Col>
-            <Col xs={12} md={8}>
+            <Col xs={12} lg={8}>
               <h2 className="product__title">You security matters</h2>
               <p className="product__desc">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore earum laboriosam alias commodi, sint, architecto illum, eos et nobis quae quasi eum qui dolor repudiandae hic! Est quo
@@ -59,7 +59,7 @@ function Products() {
       <div className="product">
         <Container>
           <Row>
-            <Col xs={12} md={8}>
+            <Col xs={12} lg={8}>
               <h2 className="product__title">Where is your money?</h2>
               <p className="product__desc">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore earum laboriosam alias commodi, sint, architecto illum, eos et nobis quae quasi eum qui dolor repudiandae hic! Est quo
@@ -71,8 +71,8 @@ function Products() {
                 </a>
               </div>
             </Col>
-            <Col xs={12} md={4}>
-              <img src={productAccount} alt="Know Easy Account" className="product__img img-fluid" />
+            <Col xs={12} lg={4}>
+              <img src={productAccount} alt="Know Easy Account" className="img-fluid product__img" />
             </Col>
           </Row>
         </Container>
