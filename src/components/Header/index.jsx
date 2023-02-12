@@ -93,11 +93,11 @@ function Header() {
                 </Nav>
               </Navbar.Collapse>
               <Nav className="main-navigation__actions actions">
-                <Nav.Link href="#home" className="main-navigation__link actions__link actions__link--hglt">
+                <Nav.Link href="#" className="main-navigation__link actions__link actions__link--hglt">
                   <FaUserAlt className="actions__icon"></FaUserAlt>
                   Login
                 </Nav.Link>
-                <Nav.Link href="#link" className="main-navigation__link actions__link actions__link--hglt">
+                <Nav.Link href="#" className="main-navigation__link actions__link actions__link--hglt">
                   <FaCheck className="actions__icon"></FaCheck>
                   Open Account
                 </Nav.Link>
